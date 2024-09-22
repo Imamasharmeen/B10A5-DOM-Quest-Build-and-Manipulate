@@ -78,6 +78,45 @@
 
         </section>
         <!-- Button section ends here.-->
+
+        <!--Noakhali flooded section starts-->
+        <section class="border border-red-500 rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8">
+            <div class="w-1/2 border border-red-500">
+                <img class="w-full" src="./assets/noakhali.png">
+            </div>
+            <div class="w-1/2 border border-red-500 ">
+                <button class="btn mb-8">BDT</button>
+                <h1 class="font-bold text-xl md:font-bold md:text-2xl mb-16">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="font-normal text-base md:font-normal md:text-xl mb-8">
+                     The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+
+                </p>
+                <input type="text" placeholder="Write Donation Amount" class="w-full p-5 font-normal text-base md:font-normal md:text-base border border-gray-300 mb-8 rounded-md " ><br>
+
+                <!--Model button -->
+                <div id="donation-noakhali">
+                    <button class="btn btn-lg w-full font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300" onclick="my_modal_4.showModal()">Donation</button>
+
+                    <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box w-3/12 max-w-5xl text-center">
+                            <h3 class="text-4xl font-bold">Congrats!</h3>
+                            <img src="./assets/coin.png" class="mx-auto mt-5">
+                            <p class="py-4 text-xl">You Have Donated for Humankind<br><span class="font-bold text-2xl">Successfully</span></p>
+                            <div class="modal-action ">
+                                <form method="dialog" class="mx-auto">
+                                    <!-- if there is a button, it will close the modal -->
+                                    <button class="btn  ">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                
+                    </dialog>
+                </div>
+                <!--Model button -->
+
+            </div>
+        </section>
+        <!--Noakhali flooded section ends-->
         
     </main>
     <footer></footer>
