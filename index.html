@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Daisy CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Tailwind CDN and customize configuration-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+                secondary: '#FFFFFF',
+                nav: '#F9F7F3',
+                header: '#111111',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- Header starts here.-->
 </head>
-<body>
-    <header></header>
+<body class="w-full">
+    <header class=" bg-nav ">
+        <nav class="w-10/12 mx-auto border-green-500 flex justify-between items-center py-5 b">
+            <button class="btn bg-primary px-8 font-bold text-2xl">Blog</button>
+            <div class="flex items-center gap-4">
+                <img src="./assets/logo.png" >
+                <p class="font-bold text-2xl">Donate Bangladesh</p>
+                
+            </div>
+            <div class="flex items-center">
+                <img src="./assets/coin.png" >
+                <p class="font-bold text-2xl"><span>5500</span> BDT</p>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here.-->
     <main></main>
     <footer></footer>
-    <script src="js/script.js" ></script>
+    <script src="./js/script.js" ></script>
 </body>
 </html>
