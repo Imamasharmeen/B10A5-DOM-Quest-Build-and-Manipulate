@@ -1,11 +1,22 @@
-document.getElementById('donation-noakhali').addEventListener('click', function(){
-    const donation = getInputFieldValueById('donation-amount')
+document.getElementById('noakhali-donation').addEventListener('click', function(){
+    const noakhaliDonation = getInputFieldValueById('noakhali-donation-amount')
+    const remainingBalance = getTextFieldValueById('remaining-balance')
+    
 
-    if(donation > 0){
-        
-        const noakhaliTotalAmount = getTextFieldValueById('noakhali-total-amount')
-        const newBalance = noakhaliTotalAmount + donation;
-        document.getElementById('noakhali-total-amount').innerText = newBalance;                    
+    if(noakhaliDonation < 0 || isNaN(noakhaliDonation)){
+        alert('Invalid Donation Amount')                           
     }
+    else{
+        const noakhaliTotalAmount = getTextFieldValueById('noakhali-total-amount')
+        const newNoakhaliBalance = noakhaliTotalAmount +noakhaliDonation;
+        document.getElementById('noakhali-total-amount').innerText = newNoakhaliBalance ;
+        
+    }
+
+    const newRemainingBalance = remainingBalance - noakhaliDonation;
+    document.getElementById('remaining-balance').innerText = newRemainingBalance; 
 })
+
+
+
 
