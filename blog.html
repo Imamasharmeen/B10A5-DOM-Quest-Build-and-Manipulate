@@ -14,9 +14,26 @@
     <!-- Tailwind CDN and customize configuration-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="w-full mx-auto bg-gray-100 mt-16 ">
+<body class="w-full mx-auto ">
+    <section class="bg-yellow-50">
+        <div class=" md:w-10/12 sm:11/12 mx-auto  flex justify-between items-center md:py-5 ">
+            <button id="home-btn" class="btn font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300" onclick="window.location.href='index.html'">Home</button>
     
-    <div class="w-10/12 mx-auto rounded-lg bg-white drop-shadow-xl  p-8">
+            <div class="flex items-center gap-4 font-bold text-2xl">
+                <img src="./assets/logo.png" >
+                <p>Donate Bangladesh</p>
+                
+            </div>
+            
+            <div class="flex items-center">               
+                <img src="./assets/coin.png" >
+                <p class="font-bold text-xl md:font-bold md:text-2xl"><span id="remaining-balance">5500</span> BDT</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="w-10/12 mx-auto rounded-lg bg-white drop-shadow-xl mt-10 p-8">
         <h1 class="text-4xl font-bold mb-4">Important FAQ</h1>
         
         <table class="w-full ">
