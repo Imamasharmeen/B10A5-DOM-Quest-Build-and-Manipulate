@@ -34,7 +34,7 @@
 </head>
 <body class="w-full">
     <div class="sticky top-0 z-50">
-        <header class="bg-yellow-50 ">
+        <header class="bg-yellow-50">
 
             <nav class="md:w-10/12 sm:11/12 mx-auto flex justify-between items-center md:py-5">
     
@@ -54,26 +54,24 @@
         </header>
     
         <!-- Header ends here.-->
-    
-        
-        <main>
-            <!-- Button section starts here.-->
-            <section class="mt-20 ">
-                <div class="w-4/12 mx-auto flex justify-between gap-5 mb-6">
+        <!-- Button section starts here.-->
+        <section class="relative pt-20 pb-20 border-b border-gray-200">
+            <div class="absolute bg-white bg-opacity-50 backdrop-blur-sm inset-0">
+                <div class="relative w-4/12 mx-auto flex justify-between gap-5 pt-20">
                     <button
-                      id="donation-btn"
-                      class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300 active">Donation
+                    id="donation-btn"class=" relative opacity-100 btn w-1/2 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500 active">Donation
                     </button>
             
                     <button
-                      id="history"
-                      class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl ">History
+                    id="history"class=" relative opacity-100 btn w-1/2 font-bold text-xl md:font-bold md:text-2xl">History
                     </button>
-                  </div>
-            </section>
+                </div>
+            </div>
+        </section>
     </div>
 
 
+    <main>
         <!-----------------History section------------------->
         <section>
             <div id="history-list" class="hidden w-8/12 mx-auto">
@@ -85,13 +83,11 @@
 
         <section id="donation-section">
             <!--Noakhali flooded section starts-->
-            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8">
+            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8 border border-gray-200 shadow-xl">
                 <div class="w-1/2">
                     <img class="w-full" src="./assets/noakhali.png">
                 </div>
                 <div class="w-1/2">
-
-
 
                     <p class="mb-8 flex text-basic font-bold text-gray-800">
                         <img src="./assets/coin.png">
@@ -132,13 +128,11 @@
 
 
             <!--Feni flooded section starts-->
-            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8">
+            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8 border border-gray-200 shadow-xl">
                 <div class="w-1/2 ">
                     <img class="w-full" src="./assets/feni.png">
                 </div>
                 <div class="w-1/2 ">
-
-
 
                     <p class="mb-8 flex text-basic font-bold text-gray-800">
                         <img src="./assets/coin.png">
@@ -179,13 +173,11 @@
 
 
             <!--Quota Movement section starts-->
-            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8">
+            <section class="rounded-2xl w-10/12 mx-auto flex gap-10 mt-20 p-8 border border-gray-200 shadow-xl">
                 <div class="w-1/2 ">
                     <img class="w-full" src="./assets/quota-protest.png">
                 </div>
                 <div class="w-1/2 ">
-
-
 
                     <p class="mb-8 flex text-basic font-bold text-gray-800">
                         <img src="./assets/coin.png">

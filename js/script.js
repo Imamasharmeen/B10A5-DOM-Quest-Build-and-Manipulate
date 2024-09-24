@@ -24,6 +24,7 @@ document.getElementById('noakhali-donation').addEventListener('click', function(
 })
 
 //----------------------Feni flooded----------------------
+
 document.getElementById('feni-donation').addEventListener('click', function(){
     const feniDonation = getInputFieldValueById('feni-donation-amount')
     const remainingBalance = getTextFieldValueById('remaining-balance')
@@ -75,22 +76,24 @@ document.getElementById('quota-donation').addEventListener('click', function(){
 //-------------history section--------------------
 
 document.getElementById('history').addEventListener('click', function(){
-    console.log('history')
+    
     document.getElementById('history-list').classList.remove('hidden')
     document.getElementById('donation-section').classList.add('hidden')
+    document.getElementById('donation-btn').classList.remove('bg-lime-300','hover:bg-lime-400')
+    document.getElementById('history').classList.add('bg-lime-300', 'hover:bg-lime-400')
+    
+   
     
 })
 
 //---------Donation section------------
 document.getElementById('donation-btn').addEventListener('click', function(){
-    console.log('donation')
+
     document.getElementById('history-list').classList.add('hidden')
     document.getElementById('donation-section').classList.remove('hidden')
+    document.getElementById('donation-btn').classList.add('bg-lime-300','hover:bg-lime-400')
+    document.getElementById('history').classList.remove('bg-lime-300','hover:bg-lime-400')
 
 })
 
-//..............,,NEW.ghddddddddddddd..........................
-document.getElementById('blog').addEventListener('click', function() {
-    // Redirect to the FAQ page
-    window.location.href = 'blog.html';
-});
+
