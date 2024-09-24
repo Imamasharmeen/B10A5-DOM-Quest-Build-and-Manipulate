@@ -82,9 +82,7 @@ document.getElementById('history').addEventListener('click', function(){
     document.getElementById('donation-section').classList.add('hidden')
     document.getElementById('donation-btn').classList.remove('bg-lime-300','hover:bg-lime-400')
     document.getElementById('history').classList.add('bg-lime-300', 'hover:bg-lime-400')
-    //document.getElementById('footer').classList.add('sticky','bottom-0')
-   
-    
+      
 })
 
 //---------Donation section------------
@@ -94,7 +92,7 @@ document.getElementById('donation-btn').addEventListener('click', function(){
     document.getElementById('donation-section').classList.remove('hidden')
     document.getElementById('donation-btn').classList.add('bg-lime-300','hover:bg-lime-400')
     document.getElementById('history').classList.remove('bg-lime-300','hover:bg-lime-400')
-    //document.getElementById('footer').classList.remove('sticky','bottom-0')
+    
 })
 
 
