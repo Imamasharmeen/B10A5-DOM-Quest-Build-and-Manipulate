@@ -31,56 +31,79 @@
             </div>
         </div>
     </section>
-
-    
     <div class="w-10/12 mx-auto rounded-lg bg-white drop-shadow-xl mt-10 mb-10 p-8">
-        <h1 class="text-4xl font-bold mb-4">Important FAQ</h1>
-        
+        <h1 class="text-4xl font-bold mb-4">Important FAQ</h1>   
         <table class="w-full ">
-            
-
             <tbody>
                 <tr class="border">
                     <td class="px-4 text-xl font-semibold py-2 ">
-                        <div>
-                            <p>What is the Document Object Model (DOM)?</p>                            
-                            <input type="text" placeholder="Write your answer here" class="w-full border-none rounded px-2 py-1">
-                        </div>
+                        <p>
+                            What is Document Object Model(DOM)?
+                        </p>
+                        <details class="mt-4">
+                            <summary class="text-gray-500">Answer is here</summary>
+                            <p class="mt-2">
+                                Document Object Model is the application programming interface for web documents. It defines the structure of a webpage, which can be dynamically accessed and manipulated by programs and scripts, hence altering the content, structure, and style of the document.
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                                            
+                <tr class="border">
+                    <td class="px-4 py-2 text-xl font-semibold">
+                        
+                        <p>
+                            How do you select an element from the DOM?
+                        </p>
+
+                        <details class="mt-4">
+                            <summary class="text-gray-500">Answer is here</summary>
+                            <p class="mt-2">
+                                To select an element in the DOM, JavaScript uses either of document.querySelector() or document.getElementById(). 
+
+                                For Example:
+                                document.querySelector('selector')
+                                document.getElementById('id')
+                            </p>
+                        </details>                        
                     </td>
                 </tr>
 
-               
 
                 <tr class="border">
                     <td class="px-4 py-2 text-xl font-semibold">
-                        <div>
-                            <p>How do you select an element from the DOM?</p>                            
-                            <input type="text" placeholder="Write your answer here" class="w-full border-none rounded px-2 py-1">
-                        </div>
+                        <p>
+                            What is event delegation in the context of the DOM, and why is it useful?
+                        </p>
+
+                        <details class="mt-4">
+                            <summary class="text-gray-500">Answer is here</summary>
+                            <p class="mt-2">
+                                Event delegation is a way to add just one event listener on some parent element to handle events occurring on its child elements, as a result it reduces the number of event listeners. Hence, this improves the performance and enables the handling of dynamically added elements.
+                            </p>
+                        </details>
+                                                    
                     </td>
                 </tr>
 
                 <tr class="border">
                     <td class="px-4 py-2 text-xl font-semibold">
-                        <div>
-                            <p>What is event delegation in the context of the DOM, and why is it useful?</p>                            
-                            <input type="text" placeholder="Write your answer here" class="w-full border-none rounded px-2 py-1">
-                        </div>
+                        <p>
+                            How do you manipulate an element's attributes and styles using the DOM?
+                        </p>
+
+                        <details class="mt-4">
+                            <summary class="text-gray-500">Answer is here</summary>
+                            <p class="mt-2">
+                                Changing the Attributes and Styles of an Element with DOM As was said before, in order to manipulate attributes and styles of an element with DOM, at first an element in the document must be selected. Having selected an element, any attribute can be changed by adding, removing, or updating values such as `src`, `href`, and `class`.
+
+                                One can manipulate CSS properties on elements directly through modification of the style object for styles. This will let one dynamically change the look and behavior of elements on the webpage.
+                            </p>
+                        </details>    
                     </td>
                 </tr>
-
-                <tr class="border">
-                    <td class="px-4 py-2 text-xl font-semibold">
-                        <div>
-                            <p>How do you manipulate an element's attributes and styles using the DOM?</p>                            
-                            <input type="text" placeholder="Write your answer here" class="w-full border-none rounded px-2 py-1">
-                        </div>
-                    </td>
-                </tr>
-
             </tbody>
-        </table>
-        
+        </table>    
     </div>
     <footer class="w-full h-24 bg-yellow-50"></footer>
 </body>
