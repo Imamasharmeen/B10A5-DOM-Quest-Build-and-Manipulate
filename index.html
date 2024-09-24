@@ -33,45 +33,49 @@
     <!-- Header starts here.-->
 </head>
 <body class="w-full">
-    <header class="bg-nav border border-green-500">
+    <div class="sticky top-0 z-50">
+        <header class="bg-nav border border-green-500">
 
-        <nav class="md:w-10/12 sm:11/12 mx-auto border border-green-500 flex justify-between items-center md:py-5">
-
-            <button
-            id="donation"
-            class="btn px-8 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300">Blog
-          </button>
-            
-            <div class="flex items-center gap-4 font-bold text-2xl">
-                <img src="./assets/logo.png" >
-                <p>Donate Bangladesh</p>
-                
-            </div>
-            
-            <div class="flex items-center">               
-                <img src="./assets/coin.png" >
-                <p class="font-bold text-xl md:font-bold md:text-2xl"><span id="remaining-balance">5500</span> BDT</p>
-            </div>
-        </nav>      
-    </header>  
-    <!-- Header ends here.-->
-
+            <nav class="md:w-10/12 sm:11/12 mx-auto border border-green-500 flex justify-between items-center md:py-5">
     
-    <main>
-        <!-- Button section starts here.-->
-        <section class="mt-20">
-            <div class="w-4/12 mx-auto flex justify-between gap-5 mb-6">
                 <button
-                  id="donation-btn"
-                  class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300 active">Donation
-                </button>
+                id="blog"
+                class="btn px-8 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300">Blog
+              </button>
+                
+                <div class="flex items-center gap-4 font-bold text-2xl">
+                    <img src="./assets/logo.png" >
+                    <p>Donate Bangladesh</p>
+                    
+                </div>
+                
+                <div class="flex items-center">               
+                    <img src="./assets/coin.png" >
+                    <p class="font-bold text-xl md:font-bold md:text-2xl"><span id="remaining-balance">5500</span> BDT</p>
+                </div>
+            </nav>      
+        </header>
+    
+        <!-- Header ends here.-->
+    
         
-                <button
-                  id="history"
-                  class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl ">History
-                </button>
-              </div>
-        </section>
+        <main>
+            <!-- Button section starts here.-->
+            <section class="mt-20 ">
+                <div class="w-4/12 mx-auto flex justify-between gap-5 mb-6">
+                    <button
+                      id="donation-btn"
+                      class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl rounded-lg bg-lime-300 hover:bg-lime-400 active:bg-lime-500  focus:ring focus:ring-lime-300 active">Donation
+                    </button>
+            
+                    <button
+                      id="history"
+                      class="btn w-1/2 font-bold text-xl md:font-bold md:text-2xl ">History
+                    </button>
+                  </div>
+            </section>
+    </div>
+
 
         <!-----------------History section------------------->
         <section>

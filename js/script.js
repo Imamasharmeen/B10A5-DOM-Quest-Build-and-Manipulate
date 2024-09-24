@@ -89,3 +89,8 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 
 })
 
+//..............,,NEW.ghddddddddddddd..........................
+document.getElementById('blog').addEventListener('click', function() {
+    // Redirect to the FAQ page
+    window.location.href = 'blog.html';
+});
